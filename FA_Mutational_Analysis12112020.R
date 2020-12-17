@@ -1,3 +1,5 @@
+# author: Hiep Nguyen
+
 #load data 
 read.csv("~/Desktop/FA_Mutational_Data.csv", header = T)
 data <- read.csv("~/Desktop/FA_Mutational_Data.csv")
@@ -54,5 +56,4 @@ final <- mutational.plot + theme(panel.grid = element_blank(), panel.border = el
 final + theme(legend.key.size = unit(0.5,"line"))
 
 #saving 
-
 ggsave("FA Mutational Data Practice.pdf", width = 6, height = 8)
